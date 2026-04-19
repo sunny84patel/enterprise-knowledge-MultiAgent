@@ -1,15 +1,9 @@
-"""
-Enterprise Knowledge Agent — Main FastAPI Entry Point
-Combined: agentic-rag-for-dummies (Repo 1) + Multi-Agentic-RAG (Repo 2)
-"""
-
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from typing import Optional
 import traceback
-import uvicorn
+import os
 
 from agents.graph import build_graph
 from core.indexer import ingest_document
@@ -18,20 +12,22 @@ from config import settings
 
 app = FastAPI(
     title="Enterprise Knowledge Agent",
-    description="Multi-Agent RAG with LangGraph + LlamaIndex + Qdrant",
     version="1.0.0"
 )
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://enterprise-knowledge-multi-agent.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Build the LangGraph agent graph once at startup
-agent_graph = build_graph()
+# ❌ DO NOT build graph globally
+agent_graph = None
 
 
 class QueryRequest(BaseModel):
@@ -42,15 +38,39 @@ class QueryRequest(BaseModel):
 
 @app.on_event("startup")
 async def startup_event():
-    init_langsmith()
-    print("✅ LangSmith tracing initialized")
-    print("✅ Agent graph compiled")
-    print(f"✅ Using model: {settings.LLM_MODEL}")
+    global agent_graph
+
+    print("🚀 Starting app...")
+    print("PORT:", os.getenv("PORT"))
+
+    try:
+        init_langsmith()
+        print("✅ LangSmith initialized")
+
+        # ⚠️ Build graph safely (can fail without crashing server)
+        agent_graph = build_graph()
+        print("✅ Agent graph ready")
+
+    except Exception as e:
+        print("❌ Startup error:", str(e))
+        agent_graph = None
+
+
+@app.get("/")
+async def root():
+    return {"status": "running"}
+
+
+@app.get("/health")
+async def health():
+    return {"status": "ok", "model": settings.LLM_MODEL}
 
 
 @app.post("/chat")
 async def chat(request: QueryRequest):
-    """Main chat endpoint — runs query through the full agent pipeline."""
+    if agent_graph is None:
+        raise HTTPException(status_code=500, detail="Agent not initialized")
+
     try:
         result = await agent_graph.ainvoke({
             "query": request.query,
@@ -62,38 +82,25 @@ async def chat(request: QueryRequest):
             "final_answer": None,
             "agent_trace": [],
         })
+
         return {
             "answer": result["final_answer"],
             "agent_trace": result["agent_trace"],
             "sources": [doc.metadata for doc in result.get("retrieved_docs", [])],
             "session_id": request.session_id,
         }
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.post("/ingest")
 async def ingest(file: UploadFile = File(...)):
-    """Upload and index a PDF or text document into Qdrant."""
     try:
         content = await file.read()
         doc_count = await ingest_document(content, file.filename or "document")
-        return {"message": f"Ingested {doc_count} chunks from '{file.filename}'"}
+        return {"message": f"Ingested {doc_count} chunks"}
+
     except Exception as e:
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
-
-
-@app.get("/health")
-async def health():
-    return {"status": "ok", "model": settings.LLM_MODEL}
-
-
-if __name__ == "__main__":
-    uvicorn.run(
-        "main:app",
-        host="0.0.0.0",
-        port=8000,
-        reload=True,
-        reload_excludes=[".venv", ".git", "__pycache__", "*.pyc"],
-    )
