@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Environment
+.env
+*.env.local
+
+# Data (don't commit uploaded docs or metrics)
+data/legal_docs/*.pdf
+data/hr_docs/*.pdf
+data/metrics_log.jsonl
+data/parent_store.json
+data/ragas_results.json
+data/benchmark_report.json
+
+# Node / React
+ui/node_modules/
+ui/build/
+ui/.env.local
+
+# Docker
+*.tar
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LangSmith local cache
+.langchain/

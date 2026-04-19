@@ -1,0 +1,83 @@
+EMPLOYEE HANDBOOK — HR POLICIES
+Version 3.2 | Effective January 2024
+
+=== SECTION 1: EMPLOYMENT TERMS ===
+
+1.1 Notice Period
+All permanent employees are required to provide a minimum notice period of 30 days
+before resignation. Senior roles (Team Lead and above) require 60 days notice.
+Notice must be submitted in writing to the direct manager and HR department.
+
+1.2 Probation Period
+New employees serve a probation period of 90 days. During probation, either party
+may terminate employment with 7 days written notice. Extension of probation (up to
+30 additional days) may be granted at management discretion.
+
+1.3 Working Hours
+Standard working hours are 9:00 AM to 6:00 PM, Monday to Friday. Flexible working
+arrangements must be approved by the line manager and HR. Remote work is permitted
+up to 3 days per week for eligible roles.
+
+=== SECTION 2: LEAVE POLICY ===
+
+2.1 Annual Leave
+All full-time employees are entitled to 20 days of paid annual leave per calendar year.
+Leave accrues at 1.67 days per month. Unused leave up to 5 days may be carried forward
+to the next year. Leave encashment is not permitted except upon separation.
+
+2.2 Sick Leave
+Employees are entitled to 12 days of paid sick leave per year. A medical certificate
+is required for absences exceeding 2 consecutive days. Sick leave does not carry forward.
+
+2.3 Maternity/Paternity Leave
+Maternity leave: 26 weeks paid for the first two children, 12 weeks for subsequent children.
+Paternity leave: 15 days paid leave, to be availed within 6 months of the child's birth.
+
+2.4 Emergency Leave
+Up to 3 days of paid emergency leave may be granted for immediate family bereavement
+or medical emergencies. Additional unpaid leave may be approved at management discretion.
+
+=== SECTION 3: PERFORMANCE MANAGEMENT ===
+
+3.1 Performance Reviews
+Formal performance reviews are conducted twice annually: mid-year (July) and year-end
+(December). Reviews follow the OKR framework. Employees receive ratings from 1 (Below
+Expectations) to 5 (Exceptional).
+
+3.2 Performance Improvement Plans
+Employees rated 1 or 2 for two consecutive reviews will be placed on a Performance
+Improvement Plan (PIP) of 60 days. Failure to meet PIP targets may result in termination.
+
+3.3 Promotions
+Promotion cycles run annually in January. Employees must have a minimum rating of 4
+for two consecutive reviews and manager endorsement to be considered.
+
+=== SECTION 4: DATA RETENTION POLICY ===
+
+4.1 Employee Records
+All employee records including contracts, payroll, and performance data must be retained
+for a minimum of 7 years from the date of separation as per statutory requirements.
+
+4.2 Customer Data
+Customer personal data must be retained only as long as necessary for the stated purpose,
+with a maximum retention period of 5 years unless legally required otherwise.
+
+4.3 Data Deletion
+Upon expiry of the retention period, data must be securely deleted using approved methods.
+Physical documents must be shredded. Digital data must be overwritten or cryptographically
+erased. A deletion certificate must be filed with the Data Protection Officer.
+
+=== SECTION 5: CODE OF CONDUCT ===
+
+5.1 Workplace Behaviour
+All employees must maintain a respectful, inclusive workplace. Harassment, discrimination,
+or bullying of any kind will result in immediate disciplinary action up to and including
+termination.
+
+5.2 Conflict of Interest
+Employees must disclose any potential conflict of interest in writing to HR within 5
+business days of becoming aware of it. Undisclosed conflicts may result in disciplinary action.
+
+5.3 Confidentiality
+All employees must maintain strict confidentiality of company information, client data,
+and business strategies both during and for 2 years after their employment period.

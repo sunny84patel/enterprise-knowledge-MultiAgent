@@ -1,0 +1,64 @@
+LEGAL SERVICES AGREEMENT — STANDARD TERMS
+Document Reference: LSA-2024-001
+
+=== CLAUSE 1: ENGAGEMENT AND SCOPE ===
+
+1.1 Scope of Services
+The firm agrees to provide legal advisory services as detailed in Schedule A attached
+hereto. Services include contract review, compliance advisory, and dispute resolution
+consultation. Any services outside this scope require a separate written engagement.
+
+1.2 Retainer Fee
+A monthly retainer of INR 50,000 is payable in advance on the 1st of each month.
+The retainer covers up to 10 hours of advisory time per month. Additional hours are
+billed at INR 8,000 per hour.
+
+=== CLAUSE 2: COMPLAINT FILING PROCEDURE ===
+
+2.1 Filing a Complaint
+All legal complaints must be filed using Form L-101, available on the firm's client
+portal. Complaints must be submitted within 60 days of the incident giving rise to
+the complaint. Late filings will not be accepted except in cases of force majeure.
+
+2.2 Complaint Review Process
+Upon receipt, complaints are acknowledged within 2 business days. A preliminary review
+is completed within 10 business days. Complex matters may require up to 30 business
+days for a full response.
+
+2.3 Escalation
+If the initial response is unsatisfactory, clients may escalate to the Senior Partner
+within 15 days of receiving the initial response. Final escalation decisions are binding.
+
+=== CLAUSE 3: CONFIDENTIALITY AND DATA PROTECTION ===
+
+3.1 Attorney-Client Privilege
+All communications between the client and firm are protected by attorney-client privilege.
+The firm will not disclose client information to any third party without explicit written
+consent, except as required by law or court order.
+
+3.2 Data Retention
+Client files and correspondence are retained for a minimum of 7 years post-engagement
+in accordance with Bar Council regulations. Electronic records are stored on encrypted
+servers with access logging.
+
+=== CLAUSE 4: LIMITATION OF LIABILITY ===
+
+4.1 Cap on Liability
+The firm's total liability in connection with any matter shall not exceed the total fees
+paid by the client in the 12 months preceding the claim.
+
+4.2 Exclusions
+The firm shall not be liable for indirect, consequential, or punitive damages. The firm
+is not liable for outcomes arising from incomplete or inaccurate information provided
+by the client.
+
+=== CLAUSE 5: TERMINATION ===
+
+5.1 Termination by Client
+The client may terminate this agreement with 30 days written notice. Fees for work
+completed up to the termination date remain payable.
+
+5.2 Termination by Firm
+The firm may terminate the engagement immediately if the client engages in conduct
+that violates applicable laws, fails to pay outstanding invoices within 45 days, or
+places the firm in an ethical conflict.
